@@ -7,8 +7,8 @@
 - mySQL 8
 
 
-## Users Info:
-1. login: user1 & password: 12345
+## Admin Info:
+1. login: admin@gmail.com & password: Password
 
 ## How to Run:
 - git clone https://github.com/Madura-Prasad/Resume-Analysis-ML-Project
