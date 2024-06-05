@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jobya</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Themesdesign" />
+    
+    <link rel="shortcut icon" th:href="@{assets/user/images/favicon.ico}">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" th:href="@{assets/user/css/bootstrap.min.css}" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" th:href="@{assets/user/css/materialdesignicons.min.css}" />
+
+    <link rel="stylesheet" type="text/css" th:href="@{assets/user/css/fontawesome.css}" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" th:href="@{assets/user/css/selectize.css}" />
+
+    <!--Slider-->
+    <link rel="stylesheet" th:href="@{assets/user/css/owl.carousel.css}" />
+    <link rel="stylesheet" th:href="@{assets/user/css/owl.theme.css}" />
+    <link rel="stylesheet" th:href="@{assets/user/css/owl.transitions.css}" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" th:href="@{assets/user/css/style.min.css}" />
+
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+        
+        <div class="back-to-home rounded d-none d-sm-block">
+            <a th:href="@{'/'}" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
+        </div>
+
+        <!-- Hero Start -->
+        <section class="vh-100" style="background: url('assets/user/images/user.jpg') center center;">
+
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="login-page bg-white shadow rounded p-4">
+                                    <div class="text-center">
+                                        <h4 class="mb-4">Login</h4>  
+                                    </div>
+                                    <form class="login-form" action="userLogin"  method="post">
+                                     <th:block th:if="${param.error}">
+								<h5 class="fw-bold text-danger text-center" id="errorMessage">
+									Incorrect Email or Password. Please try again.
+									</h6>
+							</th:block>
+							<th:block th:if="${param.logout}">
+								<h5 class="fw-bold text-danger text-center" id="logoutMessage">
+									You have been Successfully Logged Out.
+									</h6>
+							</th:block>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Your Email <span class="text-danger">*</span></label>
+                                                    <input type="email" class="form-control" placeholder="Email" name="username" required="">
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-lg-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Password <span class="text-danger">*</span></label>
+                                                    <input type="password" class="form-control" placeholder="Password" name="password" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mb-0">
+                                                <button class="btn btn-primary w-100" type="submit">Sign in</button>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a th:href="@{'/signup'}" class="text-dark font-weight-bold">Sign Up</a></p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!---->
+                            </div> <!--end col-->
+                        </div><!--end row-->
+                    </div> <!--end container-->
+                </div>
+            </div>
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- javascript -->
+         <script th:src="@{assets/user/js/jquery.min.js}"></script>
+    <script th:src="@{assets/user/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{assets/user/js/jquery.easing.min.js}"></script>
+    <script th:src="@{assets/user/js/plugins.js}"></script>
+
+    <!-- selectize js -->
+    <script th:src="@{assets/user/js/selectize.min.js}"></script>
+    <script th:src="@{assets/user/js/counter.int.js}"></script>
+
+    <script th:src="@{assets/user/js/jquery.nice-select.min.js}"></script>
+
+    <script th:src="@{assets/user/js/app.js}"></script>
+    </body>
+</html>
