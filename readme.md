@@ -2,8 +2,8 @@
 ![Java CI with Maven](https://github.com/UbaidurRehman1/spring-boot-with-thymeleaf/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 ## Requirements 
-- JDK 14
-- Maven 3.6 
+- JDK 17
+- Maven 4.0
 - mySQL 8
 
 
