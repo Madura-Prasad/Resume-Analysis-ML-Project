@@ -8,7 +8,7 @@
 
 
 ## Admin Info:
-1. login: admin@gmail.com & password: Password
+- login: admin@gmail.com & password: Password
 
 ## How to Run:
 - git clone https://github.com/Madura-Prasad/Resume-Analysis-ML-Project
